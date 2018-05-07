@@ -1,0 +1,23 @@
+{
+  "name": "vue2-koa2-webpack4",
+  "version": "1.0.0",
+  "description": "vue2-koa2-webpack4",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "koa": "^2.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuleihang/vue2-koa2-webpack4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuleihang/vue2-koa2-webpack4/issues"
+  },
+  "homepage": "https://github.com/liuleihang/vue2-koa2-webpack4#readme"
+}
