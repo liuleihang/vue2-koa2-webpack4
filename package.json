@@ -3,11 +3,23 @@
   "version": "1.0.0",
   "description": "vue2-koa2-webpack4",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "koa": "^2.5.1"
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bcrypt": "^2.0.1",
+    "glob": "^7.1.2",
+    "jsonwebtoken": "^8.2.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cors": "0.0.16",
+    "koa-helmet": "^4.0.0",
+    "koa-jwt": "^3.3.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "mongoose": "^5.0.17"
   },
   "scripts": {
+    "start": "nodemon server/ --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +31,21 @@
   "bugs": {
     "url": "https://github.com/liuleihang/vue2-koa2-webpack4/issues"
   },
-  "homepage": "https://github.com/liuleihang/vue2-koa2-webpack4#readme"
+  "homepage": "https://github.com/liuleihang/vue2-koa2-webpack4#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.4",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0"
+  }
 }

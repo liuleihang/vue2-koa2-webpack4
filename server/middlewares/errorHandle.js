@@ -1,4 +1,4 @@
-export default errHandle = (ctx,next)=>{
+const errHandle = (ctx,next)=>{
     return next().catch((err)=>{
         if(err === 401){
             ctx.status = 401;
@@ -10,3 +10,4 @@ export default errHandle = (ctx,next)=>{
         }
     })
 }
+export default errHandle;
