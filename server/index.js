@@ -21,7 +21,6 @@ const publicApi = [/\/register/,/\/login/];
 const jwtFilter = jwt({secret:publicKey}).unless({path:publicApi});
 
 
-
 app
     .use(errorHandle)
     .use(jwtFilter)
@@ -29,6 +28,7 @@ app
     .use(bodyParser())
     .use(helmet())
     .use(cors())
+    //.use(customLog)
 
 
 routing(app)

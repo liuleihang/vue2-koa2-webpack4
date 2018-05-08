@@ -55,6 +55,14 @@ class LoginController {
             body.password = await bcrypt.hash(body.password,5);
             let user = await User.find({username:body.username});
             if(!user.length){
+                /* test schame set
+                let bodys = {
+                    userInfo:{
+                        username:body.username,
+                        length:170,
+                        weigh:60
+                    }
+                }*/
                 const newUser = User(body)
                 user = await newUser.save();
                 ctx.status = 200;
